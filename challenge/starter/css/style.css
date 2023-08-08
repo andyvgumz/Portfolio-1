@@ -1,103 +1,104 @@
 /*color variables*/
 :root{
-  --primary: blue;
-  --secondary: skyblue;
-  --pop:#40ff00;
+  --main-background:#000080;
+  --secondary-background: skyblue;
+  --header-footer:#40ff00;
   } 
 
   /*Existing CSS styling removed*/
   * {
       box-sizing: border-box;
       margin: 0px;
-      padding: 0%;
+      padding: 0px;
   }
 
   /*Settings for body styling*/
   body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
-    color: var(--primary);
-    background-color: var(--secondary);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--main-background);
+    background-color: var(--secondary-background);
 }
 
 /*Header styling start here*/
 header{
-  background-color: var(--primary);
+  background-color: var(--main-background);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
 }
 
-
+/*
 header div{
-  box-shadow: 3px 3px 5px rgb(red, green, blue);
-  border-radius: 50px;
-}
+  box-shadow: 3px 3px 5px #008000;
+  border-radius: 25px;
+}*/
 
 header h1{
-  color: var(--pop);
-  font-size: 40px;
+  color: var(--main-background);
+  font-size: 35px;
   font-weight: bold;
-  background-color: var(--secondary);
+  background-color: var(--secondary-background);
   padding: 10px;
-  border: 5px solid var(--pop);
+  border: 2px solid var(--header-footer);
   border-radius: 15px;
 }
 
 header a{
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--secondary-background);
 }
 
 header nav ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  list-style: none;  
+  min-height: 80px;
 }
 
 header nav{
-margin: 20px;
+margin: 15px;
 }
 
 header nav ul li a {
-  padding: 8px;
-  font-size: 28px;
+  padding: 10px;
+  font-size: 26px;
   margin: 20px 20px 0 0;
   font-weight: bold;
   border-radius: 15px;
-  color: var(--primary);
-  background-color: var(--pop);
+  color: var(--main-background);
+  background-color: var(--header-footer);
 }
 /*End of Header Styling*/
 
 
 /*Start of Hero Styling*/
 .hero {
-background-image: url(../images/02-portfolio-1.jpg);
+background-image: url(../images/02-portfolio-3.jpg);
 background-size: cover;
 background-position: center;
 display: flex;
 align-items: center;
 justify-content: space-around;  
-height: 600px;
+height: 400px;
 }
 
 .hero img {
-  height: 150px;
+  height: 200px;
+  border-radius: 30px;
 }
 
 .hero .quote {
-  font-size: 35px;
+  font-size: 30px;
   display: flex;
   justify-content: end;
   text-align: right;
-  color: white;
+  color: 	#191970;
 }
 
 .hero .quote #quote-text {
-  font-size: 48px
+  font-size: 30px
 }
 /*End of Hero Styling*/
 
@@ -108,7 +109,7 @@ height: 600px;
   border-right: 5px; 
   min-height: 100%;
   text-align: right;
-  padding-right: 40px;
+  padding-right: 35px;
   min-width: 20%;
   max-width: 20%;
 }
@@ -125,28 +126,28 @@ height: 600px;
 }
 
 .about-me p {
-  font-size: 20px;
-  padding: 0 80px;
-  line-height: 1.5;
-  width: 90%
+  font-size: 30px;
+  padding: 0 50px;
+  line-height: 1.4;
+  width: 100%
 }
 
 /*My Work Styling Section*/
 
 .my-work {
-    padding: 30px 50px;
+    padding: 25px 40px;
     display: flex;
     justify-content: space-between;
-    background-color: var(--primary);
+    background-color: var(--main-background);
 }
 
 .my-work h2 {
-    color: var(--secondary);
+    color: var(--secondary-background);
 }
 
 .projects-grid-wrapper {
-    width: 80%;
-    height: 500px;
+    width: 90%;
+    height: 600px;
     display: flex;
     justify-content: center;
 }
@@ -168,13 +169,14 @@ height: 600px;
   text-decoration: none;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .design-engineer {
   grid-column: 1/3;
   grid-row: span 2;
   background-image: url("../images/02-portfolio-1.jpg");
+  background-position: 50% 15%;
 }
 
 .cad-engineer {
@@ -184,21 +186,24 @@ height: 600px;
 
 .cad-technician {
   background-image: url("../images/02-portfolio-3.jpg");
-  background-position: 60% 50%;
+  background-position: 50% 30%;
 }
 
 .cad-engineer {
   background-image: url("../images/02-portfolio-4.jpg");
+  background-position: 50% 30%;
 }
 
-.project5 {
+.web-developer-trainee {
   background-image: url("../images/02-run-buddy.jpg");
+  background-position: 50% 30%;
 }
 
 .project-label {
   background-color: grey;;
-  color: var(--primary);
+  color: var(--main-background);
   padding: 10px;
+  background-position: 50% 30%;
 }
 
 /*End of Section Styling*/
@@ -209,19 +214,19 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 25px;
+  margin-bottom: 25px;
 }
 
 .content-wrapper {
-  width: 80%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #contact-list {
-  width: 60%;
+  width: 50%;
 }
 
 footer ul {
@@ -240,10 +245,101 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--main-background);
   padding: 8px;
   font-weight: bold;
   border-radius: 15px;
-  background-color: var(--pop);  
+  background-color: var(--header-footer);  
 }
+/*Contact me and Footer End*/
+
+/* Media query for tablets and smaller screens*/
+@media screen and (max-width: 768px) {
+  .hero .quote {
+      font-size: 28px;
+      padding-right: 20px;
+  }
+  
+  .hero .quote #quote-text {
+      font-size: 30px;
+  }
+
+  .title h2 {
+      font-size: 35px;
+  }
+
+  .about-me p {
+      font-size: 15px;
+      line-height: 1.5;
+  }
+}
+
+/* Media query for mobile phones and smaller screens*/
+@media screen and (max-width: 575px) {
+  header {
+      justify-content: center;
+      padding: 20px;
+  }
+
+  header nav ul {
+      min-height: 80px;
+  }
+
+  .hero {
+      flex-direction: column;
+  }
+
+  .about-me {
+      flex-direction: column;
+  }
+
+  .title {
+      border-bottom: 5px solid var(--header-footer);
+      border-right: none;
+      text-align: center;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .about-me p {
+      font-size: 16px;
+      line-height: 1.6;
+      width: 100%;
+      padding: 15px;
+  }
+
+  .my-work {
+      flex-direction: column;
+      padding: 30px 0;
+  }
+
+  .projects-grid-wrapper {
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .projects-grid {
+      width: 80%;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+
+  footer ul {
+      flex-direction: column;
+  }
+
+  .content-wrapper {
+      width: 100%;
+  }
+
+  footer ul li {
+      padding: 10px;
+      text-align: center;
+  }
+  
+}
+
 
