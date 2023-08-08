@@ -5,41 +5,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>A V Gumede's Portfolio</title>
+  <link rel="stylesheet" href="../starter/css/reset.css"/>
+  <link rel="stylesheet" href="../starter/css/style.css"/>
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <div class="#about me"><h1>A V Gumede</h1></div>
     <nav>
+      <ul>
+        <li>
+          <a href="#about me">About Me</a>
+        </li>
+        <li>
+          <a href="#about me">My Work</a>
+        </li>
+        <li>
+          <a href="#about me">Contact Me</a>
+        </li>
+        <li>
+          <a href=".//Anderson_Gumede_CV_2023.pdf" target="_blank">My CV</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
+  <section class="hero">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <figure>
+        <img src="./images/Profile_pic.jpg" width="150px" height="150px" alt="An image of A V Gumede">
+        <figcaption><em>Profile Pic.</em></figcaption>
+      </figure>
     </div>
+
+      <!--<h2>Cool subtitle here!</h2>-->
+      <div class="quote">
+        <blockquote>
+          <p id="quote-text">
+          If music be the food of love, play on;<br>
+          Give me excess of it, that surfeiting<br>
+          The appetite may sicken, and so die.<br>
+          That strain again! it had a dying fall:<br></p>
+          <p>--Twelfth Night<br>
+            --Shakespeare, William
+          </p>
+        </blockquote>
+      </div>                  
   </section>
 
-  <main class="page-wrapper">
+   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
+    <section class="About-me" id="About-me">
+      <div class="title">
       <h2>About Me</h2>
+      </div>
+
+      <div>
+        <p>I am a highly motivated, focused and committed professioanl currently working<br> 
+          as a Civil CAD Technician for one of the largest projects in Europe<br>
+          and UK (HS2) and looking to add Tech soft skills within my portfolio.</p>
+          <p>I have specialist knowledge and experience in Computer Aided Technology (CAD):<br> 
+            Civil Engineering / Construction and Mechanical / Manufacturing Engineering<br> 
+            with a keen interest in Web Development and UX.</p>
+      </div>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="my-work" id="my-work">
+      <div class="title"> <h2>My Work</h2></div>      
+        <div class="projects-grid-wrapper">
+          <div class="projects-grid">
+
+            <a href="https://andyvgumz.github.io/Portfolio-1/" target="_blank" class="design-engineer">
+              <div class="project-label">
+                <h3>Design Engineer</h3>
+                <p>SolidWorks / AutoCAD / Civil 3D / MicroStation</p>
+              </div>
+            </a>
+
+            <a href="https://andyvgumz.github.io/Portfolio-1/" target="_blank" class="cad-engineer">
+              <div class="project-label">
+                <h3>CAD Engineer</h3>
+                <p>SolidWorks / AutoCAD / Civil 3D / MicroStation</p>
+              </div>
+            </a>
+
+            <a href="https://andyvgumz.github.io/Portfolio-1/" target="_blank" class="cad-technician">
+              <div class="project-label">
+                <h3>CAD Technician</h3>
+                <p>SolidWorks / AutoCAD / Civil 3D / MicroStation</p>
+              </div>
+            </a>
+
+            <a href="https://andyvgumz.github.io/Portfolio-1/" target="_blank" class="cad-engineer">
+              <div class="project-label">
+                <h3>CAD Engineer</h3>
+                <p>SolidWorks / AutoCAD / Civil 3D / MicroStation</p>
+              </div>
+            </a>
+
+            <a href="#" target="_blank" class="project number5">
+              <div class="project-label">
+                <h3>Web Developer Traninee</h3>
+                <p>HTML/CSS</p>
+              </div>
+            </a>
+          </div>
+        </div>          
     </section>
 
-    <!-- contact -->
+    <!-- contact 
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
-    </section>
+    </section> -->
   </main>
-</body>
 
+
+<footer id="contact-me">
+  <div id class="title"><h2>Contact-Me</h2></div>
+  <div class="content-wrapper">
+    <div id="contact-list">
+          <ul>
+        <li><a href="mailto:andyvgumz@yahoo.co.uk">Email</a></li>
+        <li><a href="mailto:andyvgumz@yahoo.co.uk" target="_blank">GitHub</a</li>
+        <li><a href="mailto:andyvgumz@yahoo.co.uk" target="_blank">LinkedLn</a</li>
+        <li><p>Phone: 07508273808</p></li>
+          </ul>
+       </div>
+     </div>
+  </footer>
+</body>
 </html>
